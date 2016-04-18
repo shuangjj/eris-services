@@ -17,13 +17,13 @@ This service is usually linked to a chain and/or an application. Its functionali
 status = "unfit for production"
 
 [service]
-image = "quay.io/eris/keys"
+image = "chainlex/eris-keys"
 data_container = true
 exec_host = "ERIS_KEYS_HOST"
 #restart = "always"
 
 [location]
-dockerfile = "https://github.com/eris-ltd/eris-keys/blob/master/Dockerfile"
+dockerfile = "https://github.com/shuangjj/eris-keys/blob/armhf/Dockerfile"
 #see also http://github.com/eris-ltd/common/blob/master/docker/keys/build.sh"
-repository = "https://github.com/eris-ltd/eris-keys"
+repository = "https://github.com/shuangjj/eris-keys"
 website = "https://docs.erisindustries.com/documentation/ekeys/"
